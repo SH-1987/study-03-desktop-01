@@ -3,14 +3,22 @@
         <title>eelテスト</title>
         <link rel="stylesheet" href="./style.css">
     </head>
+
     <body>
         <h2>eelテスト</h2>
-        <script type="text/javascript" src="./eel.js"></script>
+        <script type="text/javascript" src="/eel.js"></script>
+        <script src="index.js"></script>
+        <form name="search">
+            <label>CSVファイル名：</label><input id="file" type="text" name="csv_file"><br>
+            <label>検索ワード：</label><input id="search" type="text" name="word"><br>
+            <button id="btn" type="button" onclick="run()">検索</button><br>
+            <textarea class="area" id="result" name = "result" rows="10" cols="40">検索結果</textarea>>
+        </form>
         <script>
             search.addEventListener('click', () => {
-
+            
             })
-
+            
             eel.expose(view_log_js)
             function view_log_js(text){
             }
